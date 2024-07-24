@@ -1,0 +1,46 @@
+{
+  "name": "sql-lite-client",
+  "description": "Demo for running sqllite in the client",
+  "version": "1.0.0",
+  "scripts": {
+    "build": " npm run lint && webpack",
+    "production": "npm && webpack --config webpack.prod.js",
+    "preview": "webpack serve",
+    "format": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix && prettier --write 'src/**/*.{js,jsx,css,json,md,scss,ts,tsx}'",
+    "lint-format": "prettier --check 'src/**/*.{js,jsx,css,json,md,scss,ts,tsx}'",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' && npm run lint-format"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-router-dom": "^5.3.2",
+    "@types/react-router-hash-link": "^2.4.5",
+    "@types/uuid": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^7.17.0",
+    "@typescript-eslint/parser": "^7.17.0",
+    "css-loader": "^7.1.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "html-webpack-plugin": "^5.6.0",
+    "prettier": "^3.3.3",
+    "process": "^0.11.10",
+    "sass": "^1.77.8",
+    "sass-loader": "^14.2.1",
+    "source-map-loader": "^5.0.0",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^7.17.0",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4",
+    "webpack-merge": "^6.0.1"
+  },
+  "dependencies": {
+    "classnames": "^2.5.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
